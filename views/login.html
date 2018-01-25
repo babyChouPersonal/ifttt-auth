@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign In</title>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center">Welcome to My Awesome App</h1>
+		<div class="row justify-content-md-center mb-3">
+			<div class="col"></div>
+			<div class="col-md-6 col-lg-4">
+				<form action="./authorize" method="post">
+					<h2 class="form-signin-heading">Please sign in</h2>
+					<label for="inputEmail" class="sr-only">Email address</label>
+					<input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" value="anita@aa.com" required autofocus>
+					<label for="inputPassword" class="sr-only">Password</label>
+					<input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" value="123456" required>
+					
+
+					
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" value="remember-me"> Remember me
+						</label>
+					</div>
+					
+					<button id="btn-submit" class="mdl-button btn-primary btn-block" type="submit">Sign In</button>
+					<input id="sign-type" type="hidden" name="sign-type" value="email">
+
+					
+					<input id="passport" type="hidden" name="passport">
+					<input type="hidden" name="client_id" value="#client_id#">
+					<input type="hidden" name="response_type" value="#response_type#">
+					<input type="hidden" name="redirect_uri" value="#redirect_uri#">
+					<input type="hidden" name="scope" value="#scope#">
+					<input type="hidden" name="state" value="#state#">
+					
+
+					
+
+				</form>
+			</div>
+			<div class="col"></div>
+		</div>
+
+		<div class="row justify-content-md-center">
+			<div class="col"></div>
+			<div class="col-md-auto">
+				<button id="btn-google-login" class="firebaseui-idp-button mdl-button mdl-js-button mdl-button--raised firebaseui-idp-google firebaseui-id-idp-button" data-provider-id="google.com" data-upgraded=",MaterialButton">
+					<span class="firebaseui-idp-icon-wrapper"><img class="firebaseui-idp-icon" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"></span>
+					<span class="firebaseui-idp-text firebaseui-idp-text-long">Sign in with Google</span>
+					<span class="firebaseui-idp-text firebaseui-idp-text-short">Google</span>
+				</button>
+			</div>
+			<div class="col-md-auto">
+				<button id="fb-btn" class="firebaseui-idp-button mdl-button mdl-js-button mdl-button--raised firebaseui-idp-facebook firebaseui-id-idp-button" data-provider-id="facebook.com" data-upgraded=",MaterialButton"><span class="firebaseui-idp-icon-wrapper"><img class="firebaseui-idp-icon" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/facebook.svg"></span><span class="firebaseui-idp-text firebaseui-idp-text-long">Sign in with Facebook</span><span class="firebaseui-idp-text firebaseui-idp-text-short">Facebook</span></button>
+			</div>
+			<div class="col"></div>
+		</div>
+
+
+		
+		<h4 class="text-center mt-3"><a href="./signUp">Sign Up a new user?</a></h4>
+		
+
+	</div>
+	
+<script type="text/javascript" src="/dist/global.bundle.js"></script><script type="text/javascript" src="/dist/login.bundle.js"></script></body>
+</html>
